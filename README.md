@@ -47,6 +47,8 @@ This Python script allows you to easily convert roughly written todo items into 
    ```
 
 2. Run the setup.sh file
+
+   Make sure you have python dev essentials installed in your device as chromadb needs it.
    ```
    ./setup.sh
    ```
