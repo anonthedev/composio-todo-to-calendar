@@ -34,7 +34,7 @@ This Python script allows you to easily convert roughly written todo items into 
 
 1. **Setup Virtual env**
     ```
-    python3.12 -m venv env
+    python3 -m venv env
     ```
     ```
     source env/bin/activate
