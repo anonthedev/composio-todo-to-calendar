@@ -12,61 +12,64 @@ Before you begin, ensure that you have the following installed:
 ## Installation
 
 1. **Clone the repository:**
-    ```
-    git clone https://github.com/anonthedev/composio-todo-to-calendar.git
-    ```
-2. **Create a virtual env**
 
-	We've used python 3.12
+   ```
+   git clone https://github.com/anonthedev/composio-todo-to-calendar.git
+   ```
 
-	``` 
-    python3 -m venv env
+2. **Go to the cloned repo:**
+
+   ```
+   cd composio-todo-to-calendar
+   ```
+
+3. **Adding API keys**
+
+   Create a `.env` file and add the API keys there.
+
+   Composio API key can be found here - https://app.composio.dev/settings
+
+   ```
+   OPENAI_API_KEY=sk-
+   COMPOSIO_API_KEY=
+   ```
+
+## Setup Project
+
+1. **Setup Virtual env**
     ```
-	```
+    python3.12 -m venv env
+    ```
+    ```
     source env/bin/activate
     ```
 
-3. **Install required dependencies**
-	 
-	```
-	pip install -r requirements.txt
-	```
-4. **Adding API keys**
+1. Give execute permission to `setup.sh` file
 
-	Create a ```.env``` file and add the API keys there.
-    
-    Composio API key can be found here - https://app.composio.dev/settings
-	```
-    OPENAI_API_KEY=sk-
-    COMPOSIO_API_KEY=
-    ```
+   ```
+   chmod +x ./setup.sh
+   ```
 
-## Authenticate
-1. **Authenticate composio:**
-	```
-    composio-cli login
-    ```
-2. **Authenticate Google:**
-	
-    Authenticate with the account in which events will be created
-	```
-    composio-cli add googlecalendar
-    ```
+2. Run the setup.sh file
+   ```
+   ./setup.sh
+   ```
 
 ## Usage
 
 1. **Edit your todos:**
 
-    Open the `main.py` file and edit the `todos` list with your desired todo items in the format `start_time - end_time -> description`. For example:
+   Open the `main.py` file and edit the `todos` list with your desired todo items in the format `start_time - end_time -> description`. For example:
 
-	```python
-	todos = '''
-	    9AM - 11AM -> Work on project X,
-	    1PM - 3PM -> Gaming,
-	    # Add more todos here
-	'''
-	```
+   ```python
+   todos = '''
+       9AM - 11AM -> Work on project X,
+       1PM - 3PM -> Gaming,
+       # Add more todos here
+   '''
+   ```
+
 2. **Run the file:**
-	```
-	python main.py
-	```
+   ```
+   python main.py
+   ```
