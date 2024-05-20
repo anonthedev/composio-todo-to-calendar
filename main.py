@@ -1,6 +1,5 @@
 import os
 import dotenv
-import zoneinfo
 from datetime import datetime
 from crewai import Agent, Task
 from langchain_openai import ChatOpenAI
