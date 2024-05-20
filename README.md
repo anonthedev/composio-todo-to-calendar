@@ -13,7 +13,7 @@ Before you begin, ensure that you have the following installed:
 
 1. **Clone the repository:**
     ```
-    git clone 
+    git clone https://github.com/anonthedev/composio-todo-to-calendar.git
     ```
 2. **Create a virtual env**
 
@@ -57,16 +57,16 @@ Before you begin, ensure that you have the following installed:
 
 1. **Edit your todos:**
 
-Open the `main.py` file and edit the `todos` list with your desired todo items in the format `start_time - end_time -> description`. For example:
+    Open the `main.py` file and edit the `todos` list with your desired todo items in the format `start_time - end_time -> description`. For example:
 
-```python
-todos = '''
-    9AM - 11AM -> Work on project X,
-    1PM - 3PM -> Gaming,
-    # Add more todos here
-'''
-```
+	```python
+	todos = '''
+	    9AM - 11AM -> Work on project X,
+	    1PM - 3PM -> Gaming,
+	    # Add more todos here
+	'''
+	```
 2. **Run the file:**
-```
-python main.py
-```
+	```
+	python main.py
+	```
