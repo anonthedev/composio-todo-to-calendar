@@ -1,0 +1,4 @@
+crewai==0.28.8
+composio_core==0.2.60
+composio-crewai==0.2.60
+python-dotenv
