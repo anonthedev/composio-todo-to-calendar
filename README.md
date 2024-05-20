@@ -13,7 +13,7 @@ Before you begin, ensure that you have the following installed:
 
 1. **Clone the repository:**
     ```
-    git clone 
+    git clone https://github.com/anonthedev/composio-todo-to-calendar.git
     ```
 2. **Create a virtual env**
 
