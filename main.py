@@ -1,5 +1,6 @@
 import os
 import dotenv
+import zoneinfo
 from datetime import datetime
 from crewai import Agent, Task
 from langchain_openai import ChatOpenAI
@@ -12,7 +13,8 @@ composio_tool_set = ComposioToolset(apps=[App.GOOGLECALENDAR])
 
 date = datetime.today().strftime('%Y-%m-%d')
 
-timezone = "IST"
+timezone = datetime.now().astimezone().tzinfo
+print(timezone)
 
 todo = '''
     1PM - 3PM -> Code,
