@@ -2,13 +2,6 @@
 
 This Python script allows you to easily convert roughly written todo items into Google Calendar events. It leverages the power of Composio, an open-source command-line tool for developers, to automate the process of creating calendar events based on your todo descriptions.
 
-## Prerequisites
-
-Before you begin, ensure that you have the following installed:
-
-- Python 3.12 or later
-- Git
-
 ## Installation
 
 1. **Clone the repository:**
